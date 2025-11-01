@@ -15,8 +15,8 @@ const [isLogin, setIsLogin] = useState(mode === "login");
   const navigate = useNavigate();
 
   const API_URL = isLogin
-    ? "http://localhost:5007/api/auth/login"
-    : "http://localhost:5007/api/auth/register";
+    ? "https://ai-snippet-backend.vercel.app/api/auth/login"
+    : "https://ai-snippet-backend.vercel.app/api/auth/register";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
