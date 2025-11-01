@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // This is the base URL of our server
-const API_URL = 'http://localhost:5007/api';
+const API_URL = 'https://ai-snippet-backend.vercel.app/api';
 
 // Create a new instance of axios
 const api = axios.create({
