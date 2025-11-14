@@ -397,3 +397,9 @@ body::after {
   background-color: rgba(15, 17, 21, 0.7); 
   z-index: -1; /* Puts it *in front of* the video */
 }
+
+.ai-section button:disabled {
+  background-color: #555; /* A muted background color */
+  opacity: 0.7;           /* Make it look faded */
+  cursor: not-allowed;    /* Show the 'not-allowed' cursor */
+}

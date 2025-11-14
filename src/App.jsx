@@ -14,7 +14,8 @@ function App() {
   const [language, setLanguage] = useState('javascript');  
   const [prompt, setPrompt] = useState('');
   const [editingId, setEditingId] = useState(null);
-  
+  const [isGenerating, setIsGenerating] = useState(false);
+
   const { logout } = useAuth();
   const navigate = useNavigate(); // <-- 2. GET THE navigate FUNCTION
 
@@ -56,6 +57,7 @@ function App() {
   };
   const handleAiSubmit = async (e) => {
     e.preventDefault();
+    setIsGenerating(true);   
     try {
       const res = await api.post('/snippets/generate', { prompt });
       setCode(res.data.code);
@@ -64,6 +66,8 @@ function App() {
       setPrompt('');
     } catch (error) {
       console.error('Error generating AI code:', error);
+    } finally {
+      setIsGenerating(false);
     }
   };
   const handleDeleteSnippet = async (idToDelete) => {
@@ -119,7 +123,9 @@ function App() {
               onChange={(e) => setPrompt(e.target.value)}
               placeholder="e.g., 'a javascript function to reverse a string'"
             />
-            <button type="submit">Generate</button>
+            <button type="submit" disabled={isGenerating}>
+              {isGenerating ? 'Generating...' : 'Generate'}
+            </button>
           </form>
         </div>
 
