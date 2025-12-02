@@ -3,7 +3,7 @@
 A frontend application for “AI Snippet” — a React + Vite based UI that allows you to interactively explore, generate, and manage AI-powered code snippets (or content snippets).  
 
 ## 🚀 What is this project  
-- A modern and minimal frontend built with React + Vite, designed to work with an AI-powered backend (or API) for generating and managing code / content snippets.  
+- A modern and minimal frontend built with React + Vite, designed to work with an AI-powered backend for generating and managing code / content snippets.  
 - Provides an intuitive UI for users to generate, view, and manage snippets — making AI-powered snippet generation accessible through a clean web interface.  
 - Built to be simple, fast, and developer-friendly; ideal as a boilerplate or base for further customization.  
 
