@@ -1,16 +1,38 @@
-# React + Vite
+# AI Snippet Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A frontend application for “AI Snippet” — a React + Vite based UI that allows you to interactively explore, generate, and manage AI-powered code snippets (or content snippets).  
 
-Currently, two official plugins are available:
+## 🚀 What is this project  
+- A modern and minimal frontend built with React + Vite, designed to work with an AI-powered backend (or API) for generating and managing code / content snippets.  
+- Provides an intuitive UI for users to generate, view, and manage snippets — making AI-powered snippet generation accessible through a clean web interface.  
+- Built to be simple, fast, and developer-friendly; ideal as a boilerplate or base for further customization.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Why this project is useful  
+- Lets you quickly prototype and test AI-driven snippet generation workflows.  
+- Serves as a clean, minimal template combining React + Vite, useful for learning or building from scratch.  
+- Useful for developers who want a ready-to-run UI to integrate with an AI backend — instead of building a UI from scratch every time.  
 
-## React Compiler
+## 📦 Tech stack & dependencies  
+- React (functional components, hooks)  
+- Vite as build tool / bundler  
+- JavaScript, CSS for styling  
+- ESLint + configuration for linting / code quality  
+- Standard modern web environment (node, npm/yarn)  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Setup — how to run locally  
 
-## Expanding the ESLint configuration
+```bash
+# 1. Clone the repository  
+git clone https://github.com/ManikaKutiyal/ai-snippet-frontend.git  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# 2. Navigate into project directory  
+cd ai-snippet-frontend  
+
+# 3. Install dependencies  
+npm install        # or yarn install  
+
+# 4. Start development server  
+npm run dev        # or yarn dev  
+
+# 5. Open in browser  
+# Open http://localhost:3000  (or as Vite shows in terminal)  
