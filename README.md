@@ -97,10 +97,12 @@ Generated snippet is returned as JSON
 Frontend displays the result instantly
 
 📁 Project Structure
+```
 src/
  ├── components/
  ├── App.jsx
  └── main.jsx
+```
 
 Author
 
