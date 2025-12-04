@@ -1,38 +1,107 @@
-# AI Snippet Frontend
+# AI Snippet — Frontend
 
-A frontend application for “AI Snippet” — a React + Vite based UI that allows you to interactively explore, generate, and manage AI-powered code snippets (or content snippets).  
+This repository contains the **frontend of the AI Snippet Generator**, a **full-stack AI-powered application** that generates useful **code snippets or text content** from user prompts.
 
-## 🚀 What is this project  
-- A modern and minimal frontend built with React + Vite, designed to work with an AI-powered backend for generating and managing code / content snippets.  
-- Provides an intuitive UI for users to generate, view, and manage snippets — making AI-powered snippet generation accessible through a clean web interface.  
-- Built to be simple, fast, and developer-friendly; ideal as a boilerplate or base for further customization.  
+The frontend provides the user interface where users submit prompts and instantly receive AI-generated snippets from the backend API.
 
-## ✨ Why this project is useful  
-- Lets you quickly prototype and test AI-driven snippet generation workflows.  
-- Serves as a clean, minimal template combining React + Vite, useful for learning or building from scratch.  
-- Useful for developers who want a ready-to-run UI to integrate with an AI backend — instead of building a UI from scratch every time.  
+---
 
-## 📦 Tech stack & dependencies  
-- React (functional components, hooks)  
-- Vite as build tool / bundler  
-- JavaScript, CSS for styling  
-- ESLint + configuration for linting / code quality  
-- Standard modern web environment (node, npm/yarn)  
+## 🌐 Project Links
 
-## 🛠️ Setup — how to run locally  
+- **Frontend Repo:** https://github.com/ManikaKutiyal/ai-snippet-frontend  
+- **Backend Repo:** https://github.com/ManikaKutiyal/ai-snippet-backend  
+- **Live Backend API:** https://ai-snippet-backend.vercel.app/
+
+---
+
+## 📌 What is this project?
+
+AI Snippet is a full-stack AI tool that allows users to:
+
+- Enter a natural-language prompt
+- Send that prompt to an AI-powered backend
+- Receive a generated **code snippet or content response**
+- View the result instantly in the UI
+
+This frontend app is built with **React + Vite** and connects directly to a deployed **Node + Express backend** that handles prompt processing and AI generation.
+
+---
+
+## ✨ Features
+
+- Prompt input box for custom queries  
+- Real-time AI snippet generation  
+- API integration with backend server  
+- Clean & responsive user interface  
+- Fast performance using Vite bundler  
+- Mobile-friendly layout  
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React
+- Vite
+- JavaScript
+- CSS
+
+### Backend
+- Node.js
+- Express.js
+- AI / LLM API integration
+
+---
+
+## 🚀 Run Locally
 
 ```bash
-# 1. Clone the repository  
-git clone https://github.com/ManikaKutiyal/ai-snippet-frontend.git  
+# Clone the frontend repository
+git clone https://github.com/ManikaKutiyal/ai-snippet-frontend.git
 
-# 2. Navigate into project directory  
-cd ai-snippet-frontend  
+# Navigate to project folder
+cd ai-snippet-frontend
 
-# 3. Install dependencies  
-npm install        # or yarn install  
+# Install dependencies
+npm install
 
-# 4. Start development server  
-npm run dev        # or yarn dev  
+# Start development server
+npm run dev
+```
 
-# 5. Open in browser  
-# Open http://localhost:3000  (or as Vite shows in terminal)  
+The local server will start at:
+```
+http://localhost:5173
+```
+🔌 Backend Connection
+
+By default, the frontend connects to the deployed backend:
+```
+https://ai-snippet-backend.vercel.app/
+```
+
+To use a local backend, update the API base URL in the frontend source to:
+```
+http://localhost:5000
+```
+🔄 How it Works
+
+User enters a prompt in the UI
+
+Frontend sends the prompt → backend API
+
+Backend processes the prompt using AI logic
+
+Generated snippet is returned as JSON
+
+Frontend displays the result instantly
+
+📁 Project Structure
+src/
+ ├── components/
+ ├── App.jsx
+ └── main.jsx
+
+Author
+
+Manika Kutiyal
